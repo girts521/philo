@@ -15,7 +15,6 @@ void start_dinner(t_data *data)
 	int i;
 
 	i = 0;
-
 	while (i < data->number_of_philosophers)
 	{
 		thread_handle(&data->philos[i].thread, routine, &data->philos[i], CREATE);		

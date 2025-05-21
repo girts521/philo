@@ -13,25 +13,18 @@ int parse_input(char **argv, t_data *data)
 	return (1);
 }
 
-
 int main(int argc, char **argv)
 {
 	t_data data;
 
 	data.number_of_times_each_philosopher_must_eat = 0;
-
 	if(argc < 5)
 	{
-		//Provide meaningful error and 
 		clean_error("Wrong arguments passed\n");
 		return (1);
 	}
-
-	//Parse the arguments
-	if (!parse_input(argv, &data))
-		return (1);
+	parse_input(argv, &data);
 	init_philo(&data);
-
 	if (data.number_of_philosophers <= 1)
 	{
 		clean_error("Wrong arguments passed\n");

@@ -40,7 +40,6 @@ static void create_philo(t_data *data)
 		data->philos[i].full = false;
 		data->philos[i].meals_counter = 0;
 		data->philos[i].data = data;
-
 		assign_forks(&data->philos[i], data->forks, i);
 	}
 }

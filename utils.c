@@ -75,6 +75,7 @@ long	ft_atoi(char *str)
 int clean_error(char *message)
 {
 	ft_putstr_fd(message, 1);
+	//TODO
 	//free everything
 	return (1);
 }
